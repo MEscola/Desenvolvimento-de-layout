@@ -1,6 +1,6 @@
 /* Header */
 .header-container {
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .promo-banner p {
@@ -9,9 +9,17 @@
     font-weight: 500;
 }
 
+@media (max-width: 480px) {
+    .promo-banner p {
+        font-size: .78rem;
+        line-height: 1.5rem;
+        
+    }
+}
+
 /* Logo */
 .logo {
-    max-width: 152.58px;
+    max-width: 9.536rem;
     height: auto;
 }
 
@@ -81,7 +89,7 @@
     line-height: 22px;
     display: flex;
     align-items: center;
-    
+
 }
 
 /* -- banner -- */
@@ -92,31 +100,34 @@
 }
 
 .img-banner {
-width: 610px;
-height: 510px;
-top: 100px;
-left: 315px;
-mix-blend-mode: darken;
+    width: 80vw;
 
+    max-width: 610px;
+    height: auto;
+    top: 10vh;
+    left: 10vw;
+    mix-blend-mode: darken;
 }
 
 .img-sale {
-    width: 576px;
-    height: 224.98px;
-    top: 291px;
-    left: 944.97px;
+    width: 80vw;
+    top: 20vh;
+    left: 10vw;
 }
+
+
 
 /* carrossel */
 
 .lancamento-container {
     padding: 20px 0;
 
+
 }
 
 .img-carrossel {
-width: 19%;
-height: 0 1%;
+    width: 19%;
+    height: 0 1%;
 }
 
 /* primeiro banner */
@@ -130,16 +141,17 @@ height: 0 1%;
     width: auto;
     max-height: 100%;
     max-width: 100%;
-    }
-
-
-.text{
-width: 487px;
-height: 536px;
-font-size: .8rem;
 }
 
- /* página 4 */
+
+
+.text {
+    width: 487px;
+    height: 536px;
+    font-size: .8rem;
+}
+
+/* página 4 */
 
 .pag4-container {
     background: #D9D9D9;
@@ -147,12 +159,12 @@ font-size: .8rem;
 }
 
 .text-pag4 {
-    
+
     font-size: .8rem;
     color: #4F4F4F
 }
 
- /* newsletter */
+/* newsletter */
 
 
 
@@ -166,10 +178,10 @@ font-size: .8rem;
     height: 48px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    
+
 }
 
-.check{
+.check {
     width: 278px;
     height: 16px;
     gap: 5px;
@@ -184,11 +196,40 @@ font-size: .8rem;
     color: #FFFFFF;
 }
 
+.img-newsletter {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .newsletter-container {
+        padding: 2rem 1rem;
+    }
+
+    .newsletter-container .d-flex {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .form-check {
+        text-align: center;
+    }
+
+    .btn-primary {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
 /* footer */
 
-.footer{
+.footer {
     background-color: #F5F5F5;
 }
+
 .texto-footer {
     color: #303030;
     font-size: .8rem;
@@ -223,17 +264,20 @@ li {
 
 .titulo-lancamentos {
     font-weight: 700;
-    font-size: 1.25rem; /* Mobile */
+    font-size: 1.25rem;
+    /* Mobile */
     line-height: 2.25rem;
-  
+
     @media (min-width: 768px) {
-      font-size: 2rem; /* Tablet */
+        font-size: 2rem;
+        /* Tablet */
     }
-  
+
     @media (min-width: 992px) {
-      font-size: 2.5rem; /* Desktop */
+        font-size: 2.5rem;
+        /* Desktop */
     }
-  }
+}
 
 
 
@@ -242,7 +286,7 @@ li {
     .main-header {
         padding: 10px 0;
     }
-    
+
     .search-box {
         width: 100%;
     }
@@ -250,10 +294,19 @@ li {
     .navbar-collapse {
         padding-top: 1rem;
     }
-    
+
     .icons-container {
         justify-content: center !important;
     }
 
+    .pag4-container {
+        height: auto;
+    }
+
+    .banner4 {
+        aspect-ratio: auto;
+        margin-bottom: 1rem; 
+    }
     
 }
+
